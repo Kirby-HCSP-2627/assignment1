@@ -7,7 +7,7 @@ if not hasattr(sys, 'real_prefix') and sys.base_prefix == sys.prefix:
     sys.exit(1)
 
 try:
-    import numpy # Swap with a core package your assignment requires
+    import pytest # Swap with a core package your assignment requires
     print("✅ SUCCESS: Virtual environment is active and dependencies are loaded!")
 except ImportError:
     print("❌ ERROR: Dependencies are missing. Did you run 'pip install -r requirements.txt'?")
